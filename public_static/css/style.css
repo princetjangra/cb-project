@@ -1,0 +1,58 @@
+.imgh{
+    margin-top: 13px;
+}
+.dish{
+    display: flex;
+}
+.formh{
+    margin-top: 13px;
+}  
+.dish2{
+    margin-top: 20px;
+}
+.list ul{display: none;
+        list-style-type: none;
+}
+.main-item li:hover .list ul {
+    display: inline-block;
+
+}
+.ab{
+    margin-left: 200px;
+    margin-right: 215px;
+}
+.background{
+    background-color: whitesmoke;}
+.for-flex{
+    display: flex;
+    justify-content: space-around;
+}
+/* .single-item{
+    margin-right: 180px;
+
+} */
+.big{
+    margin-right: 215px;
+    height: auto;
+    width: 100%;
+}
+
+.zindexbig{
+    zoom: 1;
+    opacity: 1;
+}
+.zindexbig:hover{
+    /* zoom: 1.01; */
+    opacity: .9;
+}
+/* .opacity{
+    zoom: 1;
+    opacity: 1;
+} */
+.opacity:hover{
+    transition: opacity .4s;
+    transition-property: opacity;
+    transition-duration: 0.4s;
+    transition-timing-function: initial;
+    transition-delay: initial;
+}

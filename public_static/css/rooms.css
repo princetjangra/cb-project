@@ -1,0 +1,67 @@
+.sidediv{
+    width: 100%;
+    /* padding-left: 1.5rem !important; */
+    position: relative;
+    display: inline-block;
+    background-color: #fff;
+    box-shadow: 0px 1px 4px rgba(0,0,0, 0.08);
+}
+.maindiv{
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0px 1px 4px rgba(0,0,0, 0.08);
+}
+
+/* smaller fonts below image titles */
+.small{
+    margin-top: 0.2rem;
+    color: #737373;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.75rem;
+}
+
+
+/* things written on the side of images */
+.sidefont{
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+    font-size: 1.25rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #404040;
+}
+
+.header {
+    font-size: 30px;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: 300;
+}
+
+.sidediv > p{
+    font-weight: 500;
+    padding-left: 0.25rem;
+}
+#ullist1, #ullist2{
+    display: block;
+    padding-left: 1.5rem;
+}
+/* .sidediv ul:hover > li{
+display: block;
+} */
+
+
+
+@media (min-width: 992px){
+    .sidefont{
+        margin-left: 1rem;
+        margin-top: 0rem;
+    }
+    .pic{
+        max-width: 100%;
+    }
+    .sidediv{
+        width: 25%;
+        height: 270px;
+        margin-right: 1.25rem;
+    }
+}

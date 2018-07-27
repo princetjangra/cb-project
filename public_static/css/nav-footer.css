@@ -1,0 +1,184 @@
+body{
+    background-color:whitesmoke;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover{
+    color: #4dbc15;
+}
+
+nav{
+    background-color: #fff;
+}
+
+ul.nav{
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* 2nd menu's list item buttons */
+ul.nav .nav-item button{
+    color: #333333;
+    border: 1px solid transparent;
+    border-bottom: 0px;
+    border-top: 3px solid transparent;
+    outline: none;
+    text-align: center;
+    width: 100%;
+}
+
+/* Links of 2nd menu's li items */
+ul.nav li button{
+    padding: 0.25rem 2.6rem 0.5rem 2.6rem;
+    font: 600 1rem "segoe ui";
+    color: #000;
+}
+
+/* Hover over 2nd menu button items*/
+ul.nav > .nav-item button:hover, ul.nav .nav-item > button.navbtn-hover{
+    /* color: #4dbc15; */
+    border-radius: 0;
+    border-color: #4dbc15 rgba(120, 120, 120, 0.25) transparent rgba(120, 120, 120, 0.25);
+    border-style: solid;
+    border-width: 3px 1px 0px 1px;
+    width: 100%;
+}
+
+/* Fixed width of lists inside droptables*/
+.navdrop ul{
+    min-width: 200px;
+}
+/* Droptable's ul paddings */
+.navdrop .droptable{
+    list-style-type: none;
+    padding: 1rem 1.5rem;
+}
+.droptable a:hover{
+    text-decoration: none;
+}
+/* To make links inside droptable stretched to li size */
+.navdrop > ul li a{
+    display: block;
+    padding: 0.25rem 0;
+}
+
+/* Headings of droptable's lists */
+.navdrop ul li:first-child{
+    color: #2d9b00;
+    font: 600 1rem "Segoe UI", sans-serif;
+    padding-bottom: 0.5rem;
+}
+
+/* Hover over links other than 1st */
+.navdrop ul li:not(:first-child) a{
+    color: #333333;
+    font: 500 0.8rem "Segoe UI", sans-serif;
+}
+.navdrop ul li:not(:first-child) a:hover{
+    color: #2d9b00;
+    background-color: #f4f4f4;
+}
+
+/* Footer css */
+footer{
+    background-color: #e5e4e2;
+    position: relative;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+/* footer except copyright */
+footer ul{
+    padding: 1.25rem 0 1rem;
+    list-style-type: none;
+    /* width: 40%; */
+    margin: 5px 5px 0;
+    /* padding: 0; */
+}
+
+footer a{
+    color: #666;
+    font-size: 1.025rem;
+}
+footer a:hover{
+    text-decoration: none;
+    color: #4dbc15;
+}
+
+/* footer information blocks */
+footer ul li{
+    width: 10rem;
+}
+
+/* titles of footer details */
+footer ul li > span{
+    font-family: 'montserrat', sans-serif;
+    font-size: 1.075em;
+    font-weight: 500;
+    color: #333;
+}
+
+/* copyright symbol */
+footer > div:last-child{
+    height: 2.25rem;
+    position: absolute;
+    color: white;
+    line-height: 2.25rem;
+    background-color: #3a7c18;
+}
+
+#footer-contact{
+    margin-top: 0.75rem;
+    width: 100%;
+}
+
+.card > .img-fluid{
+    cursor: zoom-in;
+}
+.card > .img-fluid:active{
+    z-index: 10;
+    transform: scale(2);
+    cursor: zoom-in;
+}
+
+@media (min-width: 992px){
+    /* ul list is hidden here */
+    .navdrop{
+        background-color: #fff;
+        visibility: hidden;
+        display: none;
+        position: absolute;
+        box-shadow: 0px 1px 3px rgba(0,0,0,0.1);
+    }
+
+    /* upon hovering */
+    ul.nav .navbar-toggler:hover + .navdrop, .navdrop:hover{
+        visibility: visible;
+        /* display: flex; */
+        transition: all 0.2s 0.01s ease;
+        z-index: 2;
+    }
+
+    div.box > .img-fluid{
+        max-width: 300px;
+        /* height: 300px; */
+    }
+
+    /* for large images in between */
+    .card > img.big-image{
+        max-width: 100%;
+        height: auto;
+    }
+    /* cards of large images */
+    .big-image-div{
+        width: 87.5%;
+        /* width: 100%; */
+    }
+
+    footer ul{
+        padding-top: 1.5rem;
+    }
+    #footer-contact{
+        width: 12rem;
+        margin-top: 0.25rem;
+    }
+}

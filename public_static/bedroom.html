@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+            crossorigin="anonymous"> -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/nav-footer.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/rooms.css">
+    <!-- <script src="img/https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="img/https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="img/https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script> -->
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/rooms.js"></script>
+</head>
+<body>
+    <div class="top">
+        <!-- 1st half navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a href="index.html" class="navbar-brand">
+                    <span style="font-weight: bold; font-family: Lato, Verdana, sans-serif;">HOUZZ</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#right" aria-controls="left" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="right">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item flex-grow-1">
+                            <form action="" class="form-inline ml-lg-auto mr-2 pt-1">
+                                <input class="form-control form-control-sm col-md-lg-10 flex-grow-1" type="search" name="" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-sm btn-outline-success col-md-lg-2">Search</button>
+                            </form>
+                        </li>
+                        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- 2nd half navbar -->
+        <ul class="nav navbar-light justify-content-center flex-column flex-lg-row">
+            <li class="nav-item">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#photos" aria-controls="left" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <!-- <a href="" class="nav-link">PHOTOS</a> -->
+                    PHOTOS
+                </button>
+                <div class="collapse navbar-collapse navdrop d-lg-flex flex-wrap" id="photos">
+                    <ul class="droptable navbar-nav">
+                        <li>KITCHEN & DINING</li>
+                        <li class="nav-item"><a href="kitchen.html">Kitchen</a></li>
+                        <li class="nav-item"><a href="">Dining Room</a></li>
+                        <!-- <li><a href="">Home Bar</a></li> -->
+                    </ul>
+                    <ul class="droptable navbar-nav">
+                        <li>BED & BATH</li>
+                        <li class="nav-item"><a href="bedroom.html">Bedroom</a></li>
+                        <li class="nav-item"><a href="">Bathroom</a></li>
+                    </ul>
+                    <ul class="droptable navbar-nav">
+                        <li>LIVING</li>
+                        <li class="nav-item"><a href="living.html">Living Room</a></li>
+                        <li class="nav-item"><a href="">Home Theater</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#find" aria-controls="left" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    FIND PROFESSIONALS
+                </button>
+                <div class="collapse navbar-collapse d-lg-flex flex-wrap navdrop" id="find">
+                    <ul class="droptable">
+                        <li>DESIGN & RENOVATION</li>
+                        <li><a href="">Architects & Building Designers</a></li>
+                        <li><a href="">Interior Designers & Decorators</a></li>
+                        <li><a href="">Kitchen & Bath Designers</a></li>
+                        <li><a href="">Home Builders & Construction Companies</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#products" aria-controls="left" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    PRODUCTS
+                </button>
+                <div class="collapse navbar-collapse d-lg-flex flex-wrap navdrop" id="products">
+                    <!-- <ul class="droptable">
+                        <li>HOME DECOR</li>
+                        <li><a href="">Artwork</a></li>
+                        <li><a href="">Mirrors</a></li>
+                    </ul> -->
+                    <ul class="droptable">
+                        <li>FURNITURE</li>
+                        <li><a href="">Living Room</a></li>
+                        <li><a href="">Kitchen & Dining</a></li>
+                        <li><a href="">Bedroom</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#stories" aria-controls="left" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    STORIES
+                </button>
+                <div class="collapse navbar-collapse d-lg-flex flex-wrap navdrop" id="stories">
+                    <ul class="droptable">
+                        <li>LATEST FROM HOUZZ</li>
+                        <li><a href="">Kitchen Guides</a></li>
+                        <li><a href="">Bathroom Guides</a></li>
+                        <li><a href="">Bedroom Guides</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#advice" aria-controls="left" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    ADVICE
+                </button>
+                <div class="collapse navbar-collapse d-lg-flex flex-wrap navdrop" id="advice">
+                    <ul class="droptable">
+                        <li>HOUZZ DISCUSSIONS</li>
+                        <li><a href="">Kitchens</a></li>
+                        <li><a href="">Living Rooms</a></li>
+                        <li><a href="">Bedrooms</a></li>
+                        <li><a href="">Dining Rooms</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+        
+    <div class="outerdiv container d-flex flex-column flex-lg-row py-3 px-0">
+        <div class="sidediv p-3 mb-3">
+            <p id="list1">Room ></p>
+            <ul id="ullist1" style="list-style: none">
+                <li class="small"><a href="index.html">All Rooms</a></li>
+                <li class="small">Kitchen Rooms</li>
+                <li class="small">Living Room</li>
+            </ul>
+            <hr>
+            
+            <p id="list2">Style ></p>
+            <ul id="ullist2" style="list-style: none;">
+                <li class="small">Indian</li>
+                <li class="small">Contemporary</li>
+                <li class="small">Modern</li>
+            </ul>
+        </div>
+        <div class="maindiv p-4">
+                <h3 style="font-family: 'Montserrat'; font-weight: normal;">Bedroom Room Design Ideas</h3>
+            <hr>
+            <div class="d-flex flex-column flex-lg-row">
+                <img src="img/bhd1.jpg" width="550" height="500" class="pic img-fluid rounded shadow">
+                <div class="sidefont">Interior Photography
+                    <div class="small">154 Saves | 0 Questions</div>
+                </div>
+            </div>
+            <hr>
+            <div class="d-flex flex-column flex-lg-row">
+                <img src="img/bhd2.jpg" width="550" height="440" class="pic img-fluid rounded shadow">
+                <div class="sidefont"> Guest Bedroom
+                    <div class="small">12 Saves | 0 Questions</div>
+                </div>
+            </div>
+            <hr>
+            <div class="d-flex flex-column flex-lg-row">
+                <img src="img/bhd3.jpg" width="550" height="440" class="pic img-fluid rounded shadow">
+                <div class="sidefont"> Prestige Hermitage
+                    <div class="small">298 Saves | 0 Questions</div>
+                </div>
+            </div>
+            <hr>
+            <div class="d-flex flex-column flex-lg-row">
+                <img src="img/bhd4.jpg" width="550" height="440" class="pic img-fluid rounded shadow">
+                <div class="sidefont">Bellasimo Project
+                    <div class="small">3 Saves | 0 Questions</div>
+                </div>
+            </div>
+            <hr>
+            <div class="d-flex flex-column flex-lg-row">
+                <img src="img/bhd5.jpg" width="550" height="400" class="pic img-fluid rounded shadow">
+                <div class="sidefont">Contemporary Bedroom
+                    <div class="small">396 Saves | 0 Questions</div>
+                </div>
+            </div>
+            <hr>
+            <div class="d-flex flex-column flex-lg-row">
+                <img src="img/bhd6.jpg" width="550" height="440" class="pic img-fluid rounded shadow">
+                <div class="sidefont">Sky High Duplex Apartment
+                    <div class="small">132 Saves | 0 Questions</div>
+                </div>
+            </div>
+            <hr>
+            <div class="d-flex flex-column flex-lg-row">
+                <img src="img/bedroom5.jpg" width="550" height="440" class="pic img-fluid rounded shadow">
+                <div class="sidefont">Mr. Subramanyam
+                    <div class="small">1.3 K Saves | 0 Questions</div>
+                </div>
+            </div>
+            <hr>
+            <div class="d-flex flex-column flex-lg-row">
+                <img src="img/leaving room1.jpg" width="550" height="440" class="pic img-fluid rounded shadow">
+                <div class="sidefont">House No. 17 - Ahmedabad
+                    <div class="small">3 Saves | 0 Questions</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <ul class="d-flex justify-content-center flex-wrap">
+        <!-- <ul class="footer-grid"> -->
+            <li class="my-1 d-flex flex-column align-items-center">
+                <span>Popular</span>
+                <a href="living.html">Living Room</a>
+                <a href="bedroom.html">Bedroom</a>
+                <a href="kitchen.html">Kitchen</a>
+            </li>
+            <li class="my-1 d-flex flex-column align-items-center">
+                <span>Company</span>
+                <a href="aboutus.html">About Us</a>
+            </li>
+            <li class="mb-1 d-lg-flex flex-lg-column align-items-center" id="footer-contact" style="white-space: nowrap;">
+                <span style="margin: auto;"><center>Contact Us:</center></span>
+                <div class="d-flex flex-lg-column justify-content-around">
+                    <a href=""><i class="fab fa-facebook"></i> Facebook</a>
+                    <a href=""><i class="fab fa-instagram"></i> Instagram</a>
+                    <a href=""><i class="fas fa-at"></i> Mail Us</a>
+                </div>
+            </li>
+        </ul>
+        <div style="text-align: center" class="w-100">© <strong>HOUZZ</strong> 2018</div>
+    </footer>
+</body>
+</html>
